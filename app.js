@@ -47,8 +47,8 @@ function startNewGame() {
 function handleGuess() {
   const guess = currentGuess.trim().toUpperCase()
 
-  if (guess.length < 3 || guess.length > 10) {
-    alert("Please enter a valid F1 driver's last name between 3 and 10 letters.")
+  if (guess.length < 4 || guess.length > 10) {
+    alert("Please enter a valid F1 driver's last name between 4 and 10 letters.")
     return
   }
 
