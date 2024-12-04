@@ -1,27 +1,96 @@
 {
     "drivers": [
-        "Verstappen",
-        "Norris",
-        "Leclerc",
-        "Piastri",
-        "Sainz",
-        "Russell",
-        "Hamilton",
-        "Perez",
-        "Alonso",
-        "Hulkenberg",
-        "Gasly",
-        "Tsunoda",
-        "Stroll",
-        "Ocon",
-        "Magnussen",
-        "Albon",
-        "Ricciardo",
-        "Bearman",
-        "Colapinto",
-        "Zhou",
-        "Lawson",
-        "Bottas",
-        "Sargeant"
+        {
+            "name": "Verstappen",
+            "photo": "./images/verstappen.avif"
+        },
+        {
+            "name": "Hamilton",
+            "photo": "./images/hamilton.avif"
+        },
+        {
+            "name": "Leclerc",
+            "photo": "./images/leclerc.avif"
+        },
+        {
+            "name": "Russell",
+            "photo": "./images/russell.avif"
+        },
+        {
+            "name": "Alonso",
+            "photo": "./images/alonso.avif"
+        },
+        {
+            "name": "Norris",
+            "photo": "./images/norris.avif"
+        },
+        {
+            "name": "Sainz",
+            "photo": "./images/sainz.avif"
+        },
+        {
+            "name": "Piastri",
+            "photo": "./images/piastri.avif"
+        },
+        {
+            "name": "Perez",
+            "photo": "./images/perez.avif"
+        },
+        {
+            "name": "Bottas",
+            "photo": "./images/bottas.avif"
+        },
+        {
+            "name": "Gasly",
+            "photo": "./images/gasly.avif"
+        },
+        {
+            "name": "Ocon",
+            "photo": "./images/ocon.avif"
+        },
+        {
+            "name": "Zhou",
+            "photo": "./images/zhou.avif"
+        },
+        {
+            "name": "Magnussen",
+            "photo": "./images/magnussen.avif"
+        },
+        {
+            "name": "Hulkenberg",
+            "photo": "./images/hulkenberg.avif"
+        },
+        {
+            "name": "Tsunoda",
+            "photo": "./images/tsunoda.avif"
+        },
+        {
+            "name": "Ricciardo",
+            "photo": "./images/ricciardo.avif"
+        },
+        {
+            "name": "Albon",
+            "photo": "./images/albon.avif"
+        },
+        {
+            "name": "Sargeant",
+            "photo": "./images/sargeant.avif"
+        },
+        {
+            "name": "Lawson",
+            "photo": "./images/lawson.avif"
+        },
+        {
+            "name": "Bearman",
+            "photo": "./images/bearman.avif"
+        },
+        {
+            "name": "Colapinto",
+            "photo": "./images/colapinto.avif"
+        },
+        {
+            "name": "Stroll",
+            "photo": "./images/stroll.avif"
+        }
     ]
 }
