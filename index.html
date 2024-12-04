@@ -12,6 +12,14 @@
   <div id="game-container">
     <h1>F1 Driver Wordle</h1>
     <p>Guess the F1 driver's last name:</p>
+    <div>
+      <label for="era-select">Select Era: </label>
+      <select id="era-select">
+        <option value="hybrid">2014-2024: Hybrid Era</option>
+        <option value="kers">2009-2013: KERS Era</option>
+        <option value="v8">2006-2008: V8 Era</option>
+      </select>
+    </div>
     <div id="board"></div>
     <input type="text" placeholder="guess" id="guess-input" autofocus />
     <button id="submit-btn">Submit</button>

@@ -332,3 +332,31 @@ button:hover {
     transform: scale(0.75);
   }
 }
+
+#era-select {
+  border: 2px solid #444;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+#era-select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+#era-select:hover {
+  border-color: #666;
+}
+
+#era-select option {
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+}
+
+#era-select option:hover {
+  background-color: #333;
+}
