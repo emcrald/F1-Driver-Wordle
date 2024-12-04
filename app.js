@@ -7,7 +7,26 @@ let wordLength = 0
 
 document.addEventListener('DOMContentLoaded', () => {
   loadF1Drivers()
+  document.getElementById('reset-btn').addEventListener('click', resetGame);
 })
+
+function resetGame() {
+  attemptsLeft = 6
+  currentGuess = ''
+  guessedLetters = []
+
+  closeModal('win-modal')
+  closeModal('lose-modal')
+  closeModal('invalid-length-modal')
+  closeModal('word-length-modal')
+  closeModal('no-attempts-modal')
+
+  document.getElementById('guess-input').value = ''
+  document.getElementById('guess-input').focus()
+  document.getElementById('attempts-left').textContent = attemptsLeft
+
+  startNewGame()
+}
 
 function loadF1Drivers() {
   fetch('drivers.json')

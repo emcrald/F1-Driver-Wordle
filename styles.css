@@ -28,7 +28,7 @@ h1 {
 input {
   font-size: 20px;
   padding: 10px;
-  width: 120px;
+  width: 150px;
   text-align: center;
   margin-top: 20px;
   text-transform: uppercase;
@@ -151,7 +151,7 @@ button {
 }
 
 button:hover {
-  background-color: #4ccdea;
+  background-color: #3392ad;
 }
 
 .source-code-btn {
@@ -167,5 +167,5 @@ button:hover {
 }
 
 .source-code-btn:hover {
-  background-color: #39a9c9;
+  background-color: #3392ad;
 }
