@@ -153,3 +153,19 @@ button {
 button:hover {
   background-color: #4ccdea;
 }
+
+.source-code-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #4ccdea;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.source-code-btn:hover {
+  background-color: #39a9c9;
+}
