@@ -23,12 +23,6 @@ function startNewGame() {
   // select random driver
   selectedDriver = f1Drivers[Math.floor(Math.random() * f1Drivers.length)].toUpperCase()
   wordLength = selectedDriver.length
-  guessedLetters = []
-  attemptsLeft = 6
-
-  document.getElementById('attempts-left').textContent = attemptsLeft
-  document.getElementById('guess-input').value = ''
-  document.getElementById('guess-input').focus()
 
   const board = document.getElementById('board')
   board.innerHTML = ''
@@ -43,6 +37,11 @@ function startNewGame() {
     }
     board.appendChild(row)
   }
+
+  document.getElementById('guess-input').value = ''
+  document.getElementById('guess-input').focus()
+  document.getElementById('attempts-left').textContent = 6
+  attemptsLeft = 6
 }
 
 function handleGuess() {
