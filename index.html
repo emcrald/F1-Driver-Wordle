@@ -13,10 +13,11 @@
     <h1>F1 Driver Wordle</h1>
     <p>Guess the F1 driver's last name:</p>
     <div id="board"></div>
-    <input type="text" id="guess-input" autofocus />
+    <input type="text" placeholder="guess" id="guess-input" autofocus />
     <button id="submit-btn">Submit</button>
     <p id="remaining-attempts">Attempts left: <span id="attempts-left">6</span></p>
     <i>All drivers have raced in the 2024 season</i>
+    <div></div>
     <button id="reset-btn">Reset Game</button>
   </div>
 
@@ -37,7 +38,7 @@
   <div id="lose-modal" class="modal">
     <div class="modal-content">
       <h2>Game Over!</h2>
-      <p>Sorry, you didn't guess the driver in time.</p>
+      <p>Sorry, you didn't guess the driver within 6 attempts.</p>
       <button id="lose-modal-close">Close</button>
     </div>
   </div>

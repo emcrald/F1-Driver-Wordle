@@ -28,7 +28,7 @@ h1 {
 input {
   font-size: 20px;
   padding: 10px;
-  width: 150px;
+  width: 100%;
   text-align: center;
   margin-top: 20px;
   text-transform: uppercase;
@@ -36,7 +36,7 @@ input {
   color: #fff;
   border: 2px solid #4ccdea;
   border-radius: 5px;
-  max-width: 100%;
+  box-sizing: border-box;
 }
 
 button {
@@ -50,6 +50,14 @@ button {
   border-radius: 5px;
   margin-top: 10px;
   transition: background-color 0.3s;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 button:hover {
@@ -189,4 +197,138 @@ button:hover {
   font-size: 18px;
   font-weight: bold;
   margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  #game-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  input {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #4ccdea;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+
+  #remaining-attempts {
+    font-size: 16px;
+  }
+
+  #board {
+    margin-top: 15px;
+  }
+
+  .guess-row {
+    width: 100%;
+  }
+
+  .tile {
+    max-width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  #driver-photo {
+    width: 60px;
+    height: 60px;
+  }
+
+  #driver-name {
+    font-size: 16px;
+  }
+
+  .source-code-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 14px;
+  }
+
+  #game-container {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 600px) {
+  #game-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  input {
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #4ccdea;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+
+  #remaining-attempts {
+    font-size: 14px;
+  }
+
+  #board {
+    margin-top: 10px;
+  }
+
+  .guess-row {
+    width: 100%;
+  }
+
+  .tile {
+    max-width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  #driver-photo {
+    width: 50px;
+    height: 50px;
+  }
+
+  #driver-name {
+    font-size: 14px;
+  }
+
+  .source-code-btn {
+    padding: 0.2rem 0.6rem;
+    font-size: 12px;
+  }
+
+  #game-container {
+    transform: scale(0.75);
+  }
 }
