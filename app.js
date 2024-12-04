@@ -1,4 +1,4 @@
-let f1Drivers = { hybrid: [], kers: [], v8: [] }
+let f1Drivers = { hybrid: [], kers: [], v8: [], v10: [], na: [] }
 let selectedDriver = ''
 let attemptsLeft = 6
 let currentGuess = ''
@@ -56,6 +56,10 @@ function startNewGame() {
     selectedEraDrivers = f1Drivers.kers
   } else if (selectedEra === 'v8') {
     selectedEraDrivers = f1Drivers.v8
+  } else if (selectedEra === 'v10') {
+    selectedEraDrivers = f1Drivers.v10
+  } else if (selectedEra === 'na') {
+    selectedEraDrivers = f1Drivers.na
   }
 
   const randomDriver = selectedEraDrivers[Math.floor(Math.random() * selectedEraDrivers.length)]
@@ -85,7 +89,7 @@ function startNewGame() {
 function handleGuess() {
   const guess = currentGuess.trim().toUpperCase()
 
-  if (guess.length < 4 || guess.length > 10) {
+  if (guess.length < 4 || guess.length > 12) {
     showModal('invalid-length-modal')
     return
   }
@@ -127,7 +131,9 @@ function handleGuess() {
       showModal('win-modal')
       const driverPhoto = f1Drivers.hybrid.find(driver => driver.name.toUpperCase() === selectedDriver) || 
                           f1Drivers.kers.find(driver => driver.name.toUpperCase() === selectedDriver) ||
-                          f1Drivers.v8.find(driver => driver.name.toUpperCase() === selectedDriver)
+                          f1Drivers.v8.find(driver => driver.name.toUpperCase() === selectedDriver) ||
+                          f1Drivers.v10.find(driver => driver.name.toUpperCase() === selectedDriver) ||
+                          f1Drivers.na.find(driver => driver.name.toUpperCase() === selectedDriver)
       
       document.getElementById('driver-name').textContent = driverPhoto.name;
       document.getElementById('driver-photo').src = driverPhoto.photo;

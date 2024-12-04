@@ -18,13 +18,14 @@
         <option value="hybrid">2014-2024: Hybrid Era</option>
         <option value="kers">2009-2013: KERS Era</option>
         <option value="v8">2006-2008: V8 Era</option>
+        <option value="v10">1997-2005: V10 Era</option>
+        <option value="na">1988-1996: NA Era</option>
       </select>
     </div>
     <div id="board"></div>
+    <p id="remaining-attempts">Attempts left: <span id="attempts-left">6</span></p>
     <input type="text" placeholder="guess" id="guess-input" autofocus />
     <button id="submit-btn">Submit</button>
-    <p id="remaining-attempts">Attempts left: <span id="attempts-left">6</span></p>
-    <i>All drivers have raced in the 2024 season</i>
     <div></div>
     <button id="reset-btn">Reset Game</button>
   </div>
@@ -55,7 +56,7 @@
   <div id="invalid-length-modal" class="modal">
     <div class="modal-content">
       <h2>Invalid Name Length</h2>
-      <p>Please enter a valid F1 driver's last name between 4 and 10 letters.</p>
+      <p>Please enter a valid F1 driver's last name between 4 and 12 letters.</p>
       <button id="invalid-length-modal-close">Close</button>
     </div>
   </div>
