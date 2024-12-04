@@ -1,9 +1,4 @@
-const f1Drivers = [
-  "Verstappen", "Norris", "Leclerc", "Piastri", "Sainz", "Russell", "Hamilton", "Perez", "Alonso",
-  "Hulkenberg", "Gasly", "Tsunoda", "Stroll", "Ocon", "Magnussen", "Albon", "Ricciardo", "Bearman", "Colapinto",
-  "Zhou", "Lawson", "Bottas", "Sargeant"
-]
-
+let f1Drivers = []
 let selectedDriver = ''
 let attemptsLeft = 6
 let currentGuess = ''
@@ -11,13 +6,25 @@ let guessedLetters = []
 let wordLength = 0
 
 document.addEventListener('DOMContentLoaded', () => {
-  startNewGame()
-
-  document.getElementById('submit-btn').addEventListener('click', handleGuess)
-  document.getElementById('guess-input').addEventListener('input', (e) => {
-    currentGuess = e.target.value.toUpperCase()
-  })
+  loadF1Drivers()
 })
+
+function loadF1Drivers() {
+  fetch('drivers.json')
+    .then(response => response.json())
+    .then(data => {
+      f1Drivers = data.drivers
+      startNewGame()
+
+      document.getElementById('submit-btn').addEventListener('click', handleGuess)
+      document.getElementById('guess-input').addEventListener('input', (e) => {
+        currentGuess = e.target.value.toUpperCase()
+      })
+    })
+    .catch(error => {
+      console.error('Error loading the F1 drivers data:', error)
+    })
+}
 
 function startNewGame() {
   selectedDriver = f1Drivers[Math.floor(Math.random() * f1Drivers.length)].toUpperCase()
