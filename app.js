@@ -47,19 +47,20 @@ function handleGuess() {
   const guess = currentGuess.trim().toUpperCase()
 
   if (guess.length < 4 || guess.length > 10) {
-    alert("Please enter a valid F1 driver's last name between 4 and 10 letters.")
+    showModal('invalid-length-modal')
     return
   }
 
   const adjustedGuess = adjustGuessLength(guess)
 
   if (adjustedGuess.length !== wordLength) {
-    alert(`Please enter a guess that matches the length of the word (${wordLength} letters).`)
+    showModal('word-length-modal')
+    document.getElementById('word-length-modal').querySelector('p').textContent = `Please enter a guess that matches the length of the word (${wordLength} letters).`
     return
   }
 
   if (attemptsLeft <= 0) {
-    alert("No attempts left! Reload the page to play again.")
+    showModal('no-attempts-modal')
     return
   }
 
@@ -141,3 +142,6 @@ function closeModal(modalId) {
 
 document.getElementById('win-modal-close').addEventListener('click', () => closeModal('win-modal'))
 document.getElementById('lose-modal-close').addEventListener('click', () => closeModal('lose-modal'))
+document.getElementById('invalid-length-modal-close').addEventListener('click', () => closeModal('invalid-length-modal'))
+document.getElementById('word-length-modal-close').addEventListener('click', () => closeModal('word-length-modal'))
+document.getElementById('no-attempts-modal-close').addEventListener('click', () => closeModal('no-attempts-modal'))

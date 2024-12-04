@@ -37,6 +37,32 @@
     </div>
   </div>
 
+  <!-- invalid name alert -->
+  <div id="invalid-length-modal" class="modal">
+    <div class="modal-content">
+      <h2>Invalid Name Length</h2>
+      <p>Please enter a valid F1 driver's last name between 4 and 10 letters.</p>
+      <button id="invalid-length-modal-close">Close</button>
+    </div>
+  </div>
+
+  <!-- word length alert -->
+  <div id="word-length-modal" class="modal">
+    <div class="modal-content">
+      <h2>Word Length Mismatch</h2>
+      <p>Please enter a guess that matches the length of the word ({{wordLength}} letters).</p>
+      <button id="word-length-modal-close">Close</button>
+    </div>
+  </div>
+
+  <!-- no attempts alert -->
+  <div id="no-attempts-modal" class="modal">
+    <div class="modal-content">
+      <h2>No Attempts Left</h2>
+      <p>No attempts left! Reload the page to play again.</p>
+      <button id="no-attempts-modal-close">Close</button>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
