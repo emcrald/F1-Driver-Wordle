@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function startNewGame() {
-  // select random driver
   selectedDriver = f1Drivers[Math.floor(Math.random() * f1Drivers.length)].toUpperCase()
   wordLength = selectedDriver.length
 
@@ -67,7 +66,6 @@ function handleGuess() {
   attemptsLeft--
   document.getElementById('attempts-left').textContent = attemptsLeft
 
-  // guess processing
   const row = document.querySelectorAll('.guess-row')[6 - attemptsLeft - 1]
   const tiles = row.querySelectorAll('.tile')
 
@@ -86,12 +84,13 @@ function handleGuess() {
 
   if (adjustedGuess === selectedDriver) {
     setTimeout(() => {
-      alert("Congratulations! You guessed the right driver!")
+      showModal('win-modal')
       startNewGame()
     }, 1000)
   } else if (attemptsLeft === 0) {
     setTimeout(() => {
-      alert(`Sorry! The correct driver was: ${selectedDriver}.`)
+      showModal('lose-modal')
+      document.getElementById('lose-modal-message').textContent = `Sorry! The correct driver was: ${selectedDriver}.`
       startNewGame()
     }, 1000)
   }
@@ -129,3 +128,16 @@ function checkGuess(guess) {
 
   return feedback
 }
+
+function showModal(modalId) {
+  const modal = document.getElementById(modalId)
+  modal.style.display = "block"
+}
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId)
+  modal.style.display = "none"
+}
+
+document.getElementById('win-modal-close').addEventListener('click', () => closeModal('win-modal'))
+document.getElementById('lose-modal-close').addEventListener('click', () => closeModal('lose-modal'))
