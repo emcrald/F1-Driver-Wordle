@@ -169,3 +169,24 @@ button:hover {
 .source-code-btn:hover {
   background-color: #3392ad;
 }
+
+#driver-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#driver-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+  border: 3px solid #4ccdea;
+  padding: 5px;
+}
+
+#driver-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}

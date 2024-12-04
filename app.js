@@ -114,6 +114,10 @@ function handleGuess() {
   if (adjustedGuess === selectedDriver) {
     setTimeout(() => {
       showModal('win-modal')
+      const driverPhoto = f1Drivers.find(driver => driver.name.toUpperCase() === selectedDriver);
+      document.getElementById('driver-name').textContent = driverPhoto.name;
+      document.getElementById('driver-photo').src = driverPhoto.photo;
+      document.getElementById('driver-photo').alt = driverPhoto.name;
       startNewGame()
     }, 1000)
   } else if (attemptsLeft === 0) {
