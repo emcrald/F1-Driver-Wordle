@@ -27,7 +27,9 @@ function loadF1Drivers() {
 }
 
 function startNewGame() {
-  selectedDriver = f1Drivers[Math.floor(Math.random() * f1Drivers.length)].toUpperCase()
+  // choose random driver
+  const randomDriver = f1Drivers[Math.floor(Math.random() * f1Drivers.length)]
+  selectedDriver = randomDriver.name.toUpperCase()
   wordLength = selectedDriver.length
 
   const board = document.getElementById('board')
