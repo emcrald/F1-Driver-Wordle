@@ -6,23 +6,50 @@
             { "name": "Russell", "photo": "./images/russell.avif" },
             { "name": "Leclerc", "photo": "./images/leclerc.avif" },
             { "name": "Sainz", "photo": "./images/sainz.avif" },
-            { "name": "Norris", "photo": "./images/norris.avif" }
+            { "name": "Norris", "photo": "./images/norris.avif" },
+            { "name": "Bottas", "photo": "./images/bottas.avif" },
+            { "name": "Ricciardo", "photo": "./images/ricciardo.avif" },
+            { "name": "Alonso", "photo": "./images/alonso.avif" },
+            { "name": "Gasly", "photo": "./images/gasly.avif" },
+            { "name": "Ocon", "photo": "./images/ocon.avif" },
+            { "name": "Stroll", "photo": "./images/stroll.avif" },
+            { "name": "Tsunoda", "photo": "./images/tsunoda.avif" },
+            { "name": "Schumacher", "photo": "./images/image.avif" },
+            { "name": "Zhou", "photo": "./images/zhou.avif" },
+            { "name": "Latifi", "photo": "./images/image.avif" },
+            { "name": "Magnussen", "photo": "./images/magnussen.avif" },
+            { "name": "Hulkenberg", "photo": "./images/hulkenberg.avif" }
         ],
         "kers": [
             { "name": "Alonso", "photo": "./images/alonso.avif" },
-            { "name": "Button", "photo": "./images/button.avif" },
+            { "name": "Button", "photo": "./images/image.avif" },
             { "name": "Vettel", "photo": "./images/vettel.avif" },
-            { "name": "Schumacher", "photo": "./images/schumacher.avif" },
-            { "name": "Webber", "photo": "./images/webber.avif" },
-            { "name": "Rosberg", "photo": "./images/rosberg.avif" }
+            { "name": "Schumacher", "photo": "./images/image.avif" },
+            { "name": "Webber", "photo": "./images/image.avif" },
+            { "name": "Rosberg", "photo": "./images/image.avif" },
+            { "name": "Massa", "photo": "./images/image.avif" },
+            { "name": "Kovalainen", "photo": "./images/image.avif" },
+            { "name": "Heidfeld", "photo": "./images/image.avif" },
+            { "name": "Kubica", "photo": "./images/image.avif" },
+            { "name": "Di Resta", "photo": "./images/image.avif" },
+            { "name": "Petrov", "photo": "./images/image.avif" },
+            { "name": "Ricciardo", "photo": "./images/ricciardo.avif" }
         ],
         "v8": [
-            { "name": "Kubica", "photo": "./images/kubica.avif" },
-            { "name": "Barrichello", "photo": "./images/barrichello.avif" },
-            { "name": "Heidfeld", "photo": "./images/heidfeld.avif" },
-            { "name": "Trulli", "photo": "./images/trulli.avif" },
-            { "name": "Coulthard", "photo": "./images/coulthard.avif" },
-            { "name": "Fisichella", "photo": "./images/fisichella.avif" }
+            { "name": "Kubica", "photo": "./images/image.avif" },
+            { "name": "Barrichello", "photo": "./images/image.avif" },
+            { "name": "Heidfeld", "photo": "./images/image.avif" },
+            { "name": "Trulli", "photo": "./images/image.avif" },
+            { "name": "Coulthard", "photo": "./images/image.avif" },
+            { "name": "Fisichella", "photo": "./images/image.avif" },
+            { "name": "Alonso", "photo": "./images/alonso.avif" },
+            { "name": "Montoya", "photo": "./images/image.avif" },
+            { "name": "Räikkönen", "photo": "./images/image.avif" },
+            { "name": "Schumacher", "photo": "./images/image.avif" },
+            { "name": "Webber", "photo": "./images/image.avif" },
+            { "name": "Massa", "photo": "./images/image.avif" },
+            { "name": "Button", "photo": "./images/image.avif" },
+            { "name": "Rosberg", "photo": "./images/image.avif" }
         ]
     }
 }
