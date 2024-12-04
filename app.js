@@ -1,7 +1,7 @@
 const f1Drivers = [
-  "Verstappen", "Hamilton", "Leclerc", "Norris", "Ricciardo", "Alonso", "Sainz", "Russell", "Perez",
-  "Gasly", "Schumacher", "Stroll", "Latifi", "Tictum", "Zhou", "Mick", "Albon", "Magnussen", "Vettel",
-  "Schumacher", "Kvyat", "Bottas", "Zhou"
+  "Verstappen", "Norris", "Leclerc", "Piastri", "Sainz", "Russell", "Hamilton", "Perez", "Alonso",
+  "Hulkenberg", "Gasly", "Tsunoda", "Stroll", "Ocon", "Magnussen", "Albon", "Ricciardo", "Bearman", "Colapinto",
+  "Zhou", "Lawson", "Bottas", "Sargeant"
 ]
 
 let selectedDriver = ''
