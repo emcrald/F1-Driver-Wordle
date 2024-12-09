@@ -4,6 +4,7 @@ let attemptsLeft = 6
 let currentGuess = ''
 let guessedLetters = []
 let wordLength = 0
+let selectedEra = document.getElementById('era-select').value
 
 document.addEventListener('DOMContentLoaded', () => {
   loadF1Drivers()
@@ -47,19 +48,24 @@ function loadF1Drivers() {
 }
 
 function startNewGame() {
-  const selectedEra = document.getElementById('era-select').value
   let selectedEraDrivers = []
 
-  if (selectedEra === 'hybrid') {
-    selectedEraDrivers = f1Drivers.hybrid
-  } else if (selectedEra === 'kers') {
-    selectedEraDrivers = f1Drivers.kers
-  } else if (selectedEra === 'v8') {
-    selectedEraDrivers = f1Drivers.v8
-  } else if (selectedEra === 'v10') {
-    selectedEraDrivers = f1Drivers.v10
-  } else if (selectedEra === 'na') {
-    selectedEraDrivers = f1Drivers.na
+  switch (selectedEra) {
+    case 'hybrid':
+      selectedEraDrivers = f1Drivers.hybrid
+      break
+    case 'kers':
+      selectedEraDrivers = f1Drivers.kers
+      break
+    case 'v8':
+      selectedEraDrivers = f1Drivers.v8
+      break
+    case 'v10':
+      selectedEraDrivers = f1Drivers.v10
+      break
+    case 'na':
+      selectedEraDrivers = f1Drivers.na
+      break
   }
 
   const randomDriver = selectedEraDrivers[Math.floor(Math.random() * selectedEraDrivers.length)]
@@ -129,12 +135,8 @@ function handleGuess() {
   if (adjustedGuess === selectedDriver) {
     setTimeout(() => {
       showModal('win-modal')
-      const driverPhoto = f1Drivers.hybrid.find(driver => driver.name.toUpperCase() === selectedDriver) || 
-                          f1Drivers.kers.find(driver => driver.name.toUpperCase() === selectedDriver) ||
-                          f1Drivers.v8.find(driver => driver.name.toUpperCase() === selectedDriver) ||
-                          f1Drivers.v10.find(driver => driver.name.toUpperCase() === selectedDriver) ||
-                          f1Drivers.na.find(driver => driver.name.toUpperCase() === selectedDriver)
-      
+      const driverPhoto = f1Drivers[selectedEra].find(driver => driver.name.toUpperCase() === selectedDriver)
+
       document.getElementById('driver-name').textContent = driverPhoto.name;
       document.getElementById('driver-photo').src = driverPhoto.photo;
       document.getElementById('driver-photo').alt = driverPhoto.name;
