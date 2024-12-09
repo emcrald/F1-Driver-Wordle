@@ -82,6 +82,13 @@ function startNewGame() {
 
   document.getElementById('guess-input').value = ''
   document.getElementById('guess-input').focus()
+  document.getElementById('guess-input').addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      handleGuess()
+      event.preventDefault()
+    }
+  })
+  
   document.getElementById('attempts-left').textContent = 6
   attemptsLeft = 6
 }
