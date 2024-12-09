@@ -26,7 +26,7 @@
     <p id="remaining-attempts">Attempts left: <span id="attempts-left">6</span></p>
     <input type="text" placeholder="guess" id="guess-input" autofocus />
     <button id="submit-btn">Submit</button>
-    <div></div>
+    <br>
     <button id="reset-btn">Reset Game</button>
   </div>
 
@@ -48,6 +48,9 @@
     <div class="modal-content">
       <h2>Game Over!</h2>
       <p>Sorry, you didn't guess the driver within 6 attempts.</p>
+      <p>───</p>
+      <p>The correct answer was:</p>
+      <p id="answer"></p>
       <button id="lose-modal-close">Close</button>
     </div>
   </div>
