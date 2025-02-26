@@ -18,7 +18,7 @@ F1 Driver Wordle is a browser-based word-guessing game where players attempt to 
 
 ## Live Demo
 
-Play the game live on Netlify: [**F1 Driver Wordle**](https://f1driverwordle.netlify.app)
+Play the game live on Netlify: [**F1 Driver Wordle**](https://f1.emcrald.me)
 
 ---
 
