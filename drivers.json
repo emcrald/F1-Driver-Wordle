@@ -87,7 +87,6 @@
             { "name": "Pic", "photo": "./images/image.avif" },
             { "name": "Chilton", "photo": "./images/image.avif" },
             { "name": "Bianchi", "photo": "./images/image.avif" },
-            { "name": "Van der Garde", "photo": "./images/image.avif" },
             { "name": "Glock", "photo": "./images/image.avif" },
             { "name": "D'Ambrosio", "photo": "./images/image.avif" },
             { "name": "Petrov", "photo": "./images/image.avif" },
@@ -100,7 +99,7 @@
             { "name": "Yamamoto", "photo": "./images/image.avif" },
             { "name": "Di Grassi", "photo": "./images/image.avif" },
             { "name": "Fisichella", "photo": "./images/image.avif" },
-            { "name": "Luca Badoer", "photo": "./images/image.avif" }
+            { "name": "Badoer", "photo": "./images/image.avif" }
         ],
         "v8": [
             { "name": "Kubica", "photo": "./images/image.avif" },
@@ -151,9 +150,8 @@
             { "name": "Zonta", "photo": "./images/image.avif" },
             { "name": "Alesi", "photo": "./images/image.avif" },
             { "name": "Irvine", "photo": "./images/image.avif" },
-            { "name": "Ralf Schumacher", "photo": "./images/image.avif" },
             { "name": "Salo", "photo": "./images/image.avif" },
-            { "name": "Verstappen (Jos)", "photo": "./images/image.avif" },
+            { "name": "Verstappen", "photo": "./images/image.avif" },
             { "name": "Trulli", "photo": "./images/image.avif" },
             { "name": "Wurz", "photo": "./images/image.avif" }
         ],
