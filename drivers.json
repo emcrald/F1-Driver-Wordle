@@ -183,20 +183,16 @@
             { "name": "Herbert", "photo": "./images/image.avif" }
         ],
         "constructors": [
-            { "name": "Ferrari", "photo": "./images/image.avif" },
-            { "name": "McLaren", "photo": "./images/image.avif" },
-            { "name": "Mercedes", "photo": "./images/image.avif" },
-            { "name": "RedBull", "photo": "./images/image.avif" },
-            { "name": "Williams", "photo": "./images/image.avif" },
-            { "name": "Lotus", "photo": "./images/image.avif" },
-            { "name": "Renault", "photo": "./images/image.avif" },
-            { "name": "Brabham", "photo": "./images/image.avif" },
-            { "name": "AlfaRomeo", "photo": "./images/image.avif" },
-            { "name": "Sauber", "photo": "./images/image.avif" },
-            { "name": "Honda", "photo": "./images/image.avif" },
-            { "name": "AlphaTauri", "photo": "./images/image.avif" },
-            { "name": "ToroRosso", "photo": "./images/image.avif" },
-            { "name": "AstonMartin", "photo": "./images/image.avif" }
+            { "name": "Ferrari", "photo": "./images/ferrari.avif" },
+            { "name": "McLaren", "photo": "./images/mclaren.avif" },
+            { "name": "Mercedes", "photo": "./images/mercedes.avif" },
+            { "name": "Red Bull", "photo": "./images/redbull.avif" },
+            { "name": "Williams", "photo": "./images/williams.avif" },
+            { "name": "Haas", "photo": "./images/haas.avif" },
+            { "name": "Sauber", "photo": "./images/sauber.avif" },
+            { "name": "Aston Martin", "photo": "./images/aston.avif" },
+            { "name": "Racing Bulls", "photo": "./images/vcarb.avif" },
+            { "name": "Alpine", "photo": "./images/alpine.avif" }
         ]
     }
 }
