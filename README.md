@@ -10,8 +10,8 @@ F1 Driver Wordle is a browser-based word-guessing game where players attempt to 
 
 ## Features
 
-- Select an era of F1 (Hybrid, KERS, V8, V10, NA)
-- Guess the last name of an F1 driver
+- Select an era of F1 (Hybrid, KERS, V8, V10, NA, NEW: Constructors)
+- Guess the team or last name of an F1 driver
 - Get feedback on letter accuracy (correct, present, absent)
 - Win or lose alerts with driver information
 - Simple and intuitive UI
@@ -45,9 +45,9 @@ Play the game live on Netlify: [**F1 Driver Wordle**](https://f1.emcrald.me)
 ## Usage
 
 1. **Select an Era**
-   - Choose from Hybrid, KERS, V8, V10, or NA eras.
+   - Choose from Hybrid, KERS, V8, V10, or NA eras. NEW: Constructors
 2. **Enter Your Guess**
-   - Type an F1 driver's last name and click submit.
+   - Type an F1 team or driver's last name and click submit.
 3. **Receive Feedback**
    - Letters will be color-coded based on correctness.
 4. **Win or Lose**
